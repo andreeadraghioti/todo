@@ -1,0 +1,11 @@
+<div class="container mt-4">
+    <h2>View Single Todo</h2>
+    <div *ngIf="todo" class="card">
+      <div class="card-body">
+        <h3 class="card-title">Title: {{ todo.title }}</h3>
+        <p class="card-text">Description: {{ todo.description }}</p>
+        <p class="card-text">Status: {{ todo.completed ? 'Completed' : 'Not Completed' }}</p>
+      </div>
+    </div>
+  </div>
+  
